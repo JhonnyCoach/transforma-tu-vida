@@ -1,0 +1,316 @@
+/* Estilos para TransformaTuVida */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffcccb;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .menu li {
+    display: inline;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: #ff5733;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffcccb, #ffe4e1);
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.hero-text .btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-text .btn:hover {
+    background-color: #ff3300;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.about p {
+    font-size: 1em;
+    color: #555;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Programs Section */
+.programs {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffe4e1, #ffcccb);
+}
+
+.programs h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.program-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.program-tabs .tab {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.program-tabs .tab:hover {
+    transform: translateY(-5px);
+}
+
+.program-tabs h3 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.program-tabs p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Store Section */
+.store {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.store h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.store-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.store-grid .product {
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    text-align: center;
+}
+
+.store-grid img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.store-grid h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.store-grid p {
+    font-size: 1em;
+    color: #555;
+}
+
+.store-grid button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.store-grid button:hover {
+    background-color: #ff3300;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reviews-grid .review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+}
+
+.reviews-grid .review h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reviews-grid .review p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Custom Plans Section */
+.plans {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffe4e1, #ffcccb);
+    text-align: center;
+}
+
+.plans h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.plans-description {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #555;
+}
+
+.plans-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plans-grid .plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.plans-grid .plan:hover {
+    transform: translateY(-5px);
+}
+
+.plans-grid h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.plans-grid p {
+    font-size: 1em;
+    color: #555;
+}
+
+.plans-grid button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plans-grid button:hover
